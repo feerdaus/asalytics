@@ -1,3 +1,8 @@
+.logo {
+  width: 100px;
+  height: 60px;
+}
+
 .heading1 {
   max-width: 584px;
   text-align: left;
@@ -42,6 +47,11 @@
   .main {
     padding: 0px 24px;
     max-width: 1360px;
+  }
+
+  .logo {
+    width: 134px;
+    height: 71px;
   }
 
   .heading1 {

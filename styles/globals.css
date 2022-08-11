@@ -7,15 +7,15 @@ body {
   font-family: "Readex Pro", sans-serif;
 }
 
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   padding: 32px 0px;
 }
 
 .btn {
-  padding: 20px 40px;
+  padding: 10px 20px;
   border-radius: 8px;
 }
 
@@ -37,8 +37,8 @@ nav {
 }
 
 .fs-16-20 {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .fs-24-30 {
@@ -52,9 +52,17 @@ nav {
 }
 
 @media (min-width: 688px) {
+  .fs-16-20 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   .fs-36-45 {
     font-size: 36px;
     line-height: 45px;
+  }
+  .btn {
+    padding: 20px 40px;
   }
 }
 
@@ -92,14 +100,4 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   gap: 32px;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }
