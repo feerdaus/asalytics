@@ -5,7 +5,7 @@ import Logo from "./Logo";
 const Header: FC = () => {
   return (
     <header>
-      <nav className="nav">
+      <nav data-testid="nav" className="nav">
         <div className={styles.logo}>
           <Logo />
         </div>

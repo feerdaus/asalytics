@@ -20,6 +20,10 @@ const ASAList: FC = () => {
     );
   }
 
+  if (error) {
+    return <div>Error!</div>;
+  }
+
   return (
     <div className="flex">
       {data?.asalist?.results &&

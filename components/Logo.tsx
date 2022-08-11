@@ -1,8 +1,9 @@
+import styles from "@styles/Home.module.css";
+
 const Logo = () => {
   return (
     <svg
-      width="inherit"
-      height="inherit"
+      className={styles.logo}
       viewBox="0 0 134 71"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

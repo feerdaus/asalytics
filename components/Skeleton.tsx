@@ -1,12 +1,8 @@
 import { FC } from "react";
+import styles from "@styles/Home.module.css";
 
-interface SkeletonProps {
-  width?: number;
-  height?: number;
-}
-
-const Skeleton: FC<SkeletonProps> = ({ width = 304, height = 185 }) => {
-  return <div style={{ width, height }} className="animated-background" />;
+const Skeleton: FC = () => {
+  return <div className={`animated-background ${styles.card}`} />;
 };
 
 export default Skeleton;
