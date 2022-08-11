@@ -1,0 +1,11 @@
+overwrite: true
+schema: "https://analytics-api.herokuapp.com/analytics"
+documents: "graphql/**/*.graphql"
+generates:
+  graphql/generated/index.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - typescript-react-query
+    config:
+      fetcher: graphql-request

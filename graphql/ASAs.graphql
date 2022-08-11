@@ -1,0 +1,9 @@
+query ASAList {
+  asalist {
+    results {
+      name
+      available
+      logo
+    }
+  }
+}
