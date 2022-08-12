@@ -2,7 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["algorand-wallet-mainnet.s3.amazonaws.com"],
+    dangerouslyAllowSVG: true,
+    domains: ["algorand-wallet-mainnet.s3.amazonaws.com", "ik.imagekit.io"],
   },
 };
 
