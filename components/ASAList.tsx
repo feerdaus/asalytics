@@ -21,13 +21,13 @@ const ASAList: FC = () => {
   }
 
   if (error) {
-    return <div>Error!</div>;
+    return <div className="error">Oops! An error has occured</div>;
   }
 
   return (
     <div className="flex">
-      {data?.asalist?.results &&
-        data.asalist.results.map((item, index) => (
+      {data?.asalist?.result &&
+        data.asalist.result.map((item, index) => (
           <ASACard
             key={`${item.name}-${index}`}
             logo={item.logo}
