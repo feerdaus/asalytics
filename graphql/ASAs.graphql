@@ -1,6 +1,6 @@
 query ASAList {
   asalist {
-    results {
+    result {
       name
       available
       logo

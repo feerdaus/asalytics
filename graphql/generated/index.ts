@@ -20,15 +20,6 @@ export type Scalars = {
   DateTime: any;
 };
 
-export type Asa = {
-  __typename?: 'Asa';
-  assetId: Scalars['String'];
-  available: Scalars['Boolean'];
-  logo?: Maybe<Scalars['String']>;
-  name: Scalars['String'];
-  unitname1: Scalars['String'];
-};
-
 export type AsaData = {
   __typename?: 'AsaData';
   URL?: Maybe<Scalars['String']>;
@@ -58,7 +49,7 @@ export type AsaData = {
 
 export type AsaList = {
   __typename?: 'AsaList';
-  results: Array<Asa>;
+  result: Array<AsaData>;
 };
 
 export type AsaResponse = {
@@ -219,13 +210,13 @@ export type TwitterOverview = {
 export type AsaListQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type AsaListQuery = { __typename?: 'Query', asalist: { __typename?: 'AsaList', results: Array<{ __typename?: 'Asa', name: string, available: boolean, logo?: string | null }> } };
+export type AsaListQuery = { __typename?: 'Query', asalist: { __typename?: 'AsaList', result: Array<{ __typename?: 'AsaData', name: string, available: boolean, logo?: string | null }> } };
 
 
 export const AsaListDocument = `
     query ASAList {
   asalist {
-    results {
+    result {
       name
       available
       logo
